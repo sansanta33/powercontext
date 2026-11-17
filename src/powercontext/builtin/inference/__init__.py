@@ -25,6 +25,7 @@ from powercontext.builtin.inference.errors import (
     InferenceUnavailableError,
     InvalidInferenceOutputError,
 )
+from powercontext.builtin.inference.coalescing import CoalescingEmbeddingModel
 from powercontext.builtin.inference.models import (
     EmbeddingResult,
     EmbeddingVector,
@@ -40,6 +41,7 @@ from powercontext.builtin.inference.protocols import (
 from powercontext.builtin.inference.tokens import TokenEstimator, TokenEstimatorProfile, character_token_estimator
 
 __all__ = [
+    "CoalescingEmbeddingModel",
     "EmbeddingModel",
     "EmbeddingResult",
     "EmbeddingVector",
